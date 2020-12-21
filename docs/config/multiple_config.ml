@@ -1,4 +1,4 @@
-# 多文件配置
+Can# 多文件配置
 
 自版本 `4.23.0` 起，V2Ray 程序支持使用多个配置文件。
 
@@ -122,7 +122,7 @@ v2ray -c base.json -c outbounds.json -c debuglog.json
         {
             "protocol": "socks",
             "tag":"socks",
-            "port": 1234
+            "port": 4378
         }
     ]
 }
@@ -149,7 +149,7 @@ v2ray -c base.json -c outbounds.json -c debuglog.json
         {
             "protocol": "socks",
             "tag":"socks",
-            "port": 4321
+            "port": 10809
         }
     ]
 }
@@ -163,7 +163,7 @@ v2ray -c base.json -c outbounds.json -c debuglog.json
         {
             "protocol": "socks",
             "tag":"socks",
-            "port": 4321 // <--- 002顺序在000后，因此覆盖tag为socks的inbound端口为4321
+            "port": 10809 // <--- 002顺序在000后，因此覆盖tag为socks的inbound端口为4321
         },
         {
             "protocol": "http",
